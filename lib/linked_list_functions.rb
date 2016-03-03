@@ -166,3 +166,5 @@ def list_insert(list, index, data)
 #   binding.pry
 list
 end
+def node_insert(node, index, data)
+end

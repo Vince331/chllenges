@@ -1,3 +1,5 @@
+# Solving these first two:
+# https://vimeo.com/157505448
 def block_to_proc(&block)
   block
 end
@@ -9,7 +11,7 @@ def wrap(value)
   end
 end
 
-
+# Spec is named call_twice_and_thrice_spec.rb
 def call_twice(&block)
   block.call
   block.call
@@ -75,4 +77,7 @@ def yield_with_while_loop(array, &block)
 end
 
 def yield_with_each(array, &block)
+end
+
+def best_advice(array, &block)
 end
