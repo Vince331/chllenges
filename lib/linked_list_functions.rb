@@ -4,6 +4,7 @@
 
 # These ones are good to start with:
 def list_first(list)
+
   if list.head == nil
     @head
 else
@@ -13,6 +14,9 @@ end
  # return  list.head.data
  # end
  # return @head
+  # Try typing this into pry: show-source -e list.class
+  require "pry"
+  binding.pry
 end
 
 def list_shift(list)

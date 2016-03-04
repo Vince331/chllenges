@@ -76,3 +76,34 @@ end
 
 def yield_with_each(array, &block)
 end
+
+
+def best_advice(array, &block)
+end
+
+def blinked_list_unshift(link, data)
+end
+
+# You'll have to figure out how to define aside :)
+
+
+# If you struggle with any of these, skip to the next one and come back later
+class PubSubSimple
+  # you'll have to figure out what goes in here :)
+end
+
+class OnCount
+end
+
+class PubSub
+end
+
+class Do
+end
+
+def block_and_forth(&block)
+end
+
+def block_and_forth_forever(&block)
+end
+
