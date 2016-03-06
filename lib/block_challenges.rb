@@ -4,21 +4,22 @@ end
 
 
 def wrap(value)
-  block_to_proc do
-    value
+ block_to_proc do
+   value
   end
 end
 
 
 def call_twice(&block)
-  block.call
-  block.call
+  yield
+  yield
 end
 
 def call_thrice(&block)
-  block.call
-  block.call
-  block.call
+  yield
+  yield
+  yield
+
 end
 
 
@@ -26,59 +27,137 @@ def yield_first(array, &block)
  if  array == []
    return array
 else
-  block.call(array[0])
+  yield array[0]
 end
+#  block.call(array[0])
+#end
 
 end
 
 
 def yield_em_all(array, &block)
- i = 0
-  while i < array.size
-        yield array[i]
-            i += 1
-  end
+# i = 0
+#  while i < array.size
+#        yield array[i]
+#            i += 1
+#  end
 
 
 end
 
 
 def yield_two(array, &block)
+ i = 0
+ while i < array.size
+ # block.call(array[i])
+yield array[i]
+i+=1
+ end
 
 end
 
 def yield_three(array, &block)
+   i = 0
+ while i < array.size
+ # block.call(array[i])
+yield array[i]
+i+=1
+end
 end
 
 def yield_four(array, &block)
+  i = 0
+ while i < array.size
+ # block.call(array[i])
+yield array[i]
+i+=1
+end
 end
 
+
 def yield_five(array, &block)
+ i = 0
+ while i < array.size
+ # block.call(array[i])
+yield array[i]
+i+=1
+end
+
 end
 
 def yield_six(array, &block)
+ i = 0
+ while i < array.size
+ # block.call(array[i])
+yield array[i]
+i+=1
+end
 end
 
 def yield_seven(array, &block)
+ i = 0
+ while i < array.size
+ # block.call(array[i])
+yield array[i]
+i+=1
+end
 end
 
 def yield_eight(array, &block)
+ i = 0
+ while i < array.size
+ # block.call(array[i])
+yield array[i]
+i+=1
+end
 end
 
 def yield_nine(array, &block)
+ i = 0
+ while i < array.size
+ # block.call(array[i])
+yield array[i]
+i+=1
+end
 end
 
 def yield_ten(array, &block)
+ i = 0
+ while i < array.size
+ # block.call(array[i])
+yield array[i]
+i+=1
+end
 end
 
 def yield_with_while_loop(array, &block)
+ i = 0
+ while i < array.length
+  block.call(array[i])
+#yield array[i]
+i+=1
+end
 end
 
 def yield_with_each(array, &block)
+  array.each do |x|
+    yield x
+  end
+
 end
 
 
 def best_advice(array, &block)
+#i = 0
+#while i < array.length
+  if (yield array[0]) == true
+    return array[0]
+  end
+ #   array[i]
+ #   i+=1
+ # end
+
+
 end
 
 def blinked_list_unshift(link, data)

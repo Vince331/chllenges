@@ -98,5 +98,61 @@ class NormalNode
  end
 
 
-end
+ def min(value = self.data)
 
+   if  self.link.class == NilNode
+       return value
+   end
+
+   if  self.data > self.link.data
+       value = self.link.data
+   else
+       value = self.data
+   end
+   self.link.min(value)
+ end
+
+
+ def max(value = self.data)
+
+   if  self.link.class == NilNode
+       return value
+   end
+
+   if  self.data > self.link.data
+       value = self.data
+   else
+     value = self.link.data
+   end
+   self.link.min(value)
+ end
+
+
+ def last
+   if  self.link.class == NilNode
+     return self.data
+   end
+
+   self.link.last
+ end
+
+ def empty?
+   false
+ end
+
+ def[](arg = "")
+
+   if arg = 0
+     self.data
+   end
+   require "pry"
+   binding.pry
+ end
+
+
+
+
+
+
+
+ end
