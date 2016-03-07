@@ -1,5 +1,6 @@
 require 'module_challenges/challenges'
 # include
+#module Mahmixin
 #   define a module MahMixin
 #   define a class MahMixin::User
 #     users have a name and an age
