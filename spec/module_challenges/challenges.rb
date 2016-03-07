@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 module Mahmixin
 class User
 
@@ -14,3 +15,7 @@ end
 
 
 end
+=======
+require 'spec_helper'
+require 'module_challenges'
+>>>>>>> 8d094816603d57572b87e4270b6de1b099e7a845

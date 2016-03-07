@@ -15,7 +15,7 @@ end
  # end
  # return @head
   # Try typing this into pry: show-source -e list.class
-  require "pry"
+  require 'pry'
   binding.pry
 end
 
@@ -31,14 +31,20 @@ def list_shift(list)
 end
 
 def list_unshift(list, data)
+<<<<<<< HEAD
   # Try typing this into pry: show-source Node
 
  list.head =  Node.new(data,list.head)
  list
+=======
+ # Try typing this into pry: show-source -e list.class
+ require "pry"
+ binding.pry
+>>>>>>> 8d094816603d57572b87e4270b6de1b099e7a845
 end
 
-
 # Probably a nice intermediate set
+<<<<<<< HEAD
 def list_size(list)
   count = 0
   if list.head == nil
@@ -57,8 +63,10 @@ def list_size(list)
 
 count
 end
+=======
+>>>>>>> 8d094816603d57572b87e4270b6de1b099e7a845
 
-def list_each(list, &block) # deleteme
+def list_size(list)
 end
 
 def list_last(list)
@@ -94,6 +102,9 @@ def list_min(list)
       check << link_adder
     end
     test
+end
+
+def list_max(list)
 end
 
 
@@ -169,6 +180,4 @@ def list_insert(list, index, data)
 #   require "pry"
 #   binding.pry
 list
-end
-def node_insert(node, index, data)
 end
