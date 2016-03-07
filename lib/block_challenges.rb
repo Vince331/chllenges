@@ -148,19 +148,26 @@ end
 
 
 def best_advice(array, &block)
-#i = 0
-#while i < array.length
-  if (yield array[0]) == true
-    return array[0]
+i = 0
+until (yield array[i])  == true || i == array.length
+    i+=1
+   # if i == array.length
+   #   break
+   # end
   end
- #   array[i]
- #   i+=1
- # end
-
-
+  return array[i]
 end
 
 def blinked_list_unshift(link, data)
+
+ # require "pry"
+ # binding.pry
+ Proc.new do |i|
+
+ end
+
+
+
 end
 
 # You'll have to figure out how to define aside :)
